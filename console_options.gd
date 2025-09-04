@@ -10,7 +10,7 @@ const CONFIG_PATH := "res://addons/limbo_console.cfg"
 }
 @export var disable_in_release_build: bool = false
 @export var print_to_stdout: bool = false
-@export var pause_when_open: bool = true
+@export var pause_when_open: bool = false
 
 @export var commands_disabled_in_release: Array = [
 	"eval" # enables arbitrary code execution and asset extraction in the running game.
@@ -18,7 +18,7 @@ const CONFIG_PATH := "res://addons/limbo_console.cfg"
 
 @export_category("appearance")
 @export var custom_theme: String = "res://addons/limbo_console_theme.tres"
-@export var height_ratio: float = 0.5
+@export var height_ratio: float = 0.9
 @export var open_speed: float = 5.0 # For instant, set to a really high float like 99999.0
 @export var opacity: float = 1.0
 @export var sparse_mode: bool = false # Print empty line after each command execution.
